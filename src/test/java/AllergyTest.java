@@ -1,7 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 
-public class ProgramNameTest {
+public class AllergyTest {
 
 //   @Test
 //   public void whoWins_ReturnsValueForKeyThatEqualsPlayerTwoGuess_String() {
