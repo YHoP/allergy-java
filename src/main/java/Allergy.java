@@ -42,33 +42,37 @@ public class Allergy {
 
     ArrayList<String> userAllergy = new ArrayList<String>();
 
-      while (score > 0 && score <= 256){
-      if(score >= 128){
-        score -= 128;
-        userAllergy.add(allergyHash.get(128));
-      }else if(score >= 64){
-        score -= 64;
-        userAllergy.add(allergyHash.get(64));
-      }else if(score >= 32){
-        score -= 32;
-        userAllergy.add(allergyHash.get(32));
-      }else if(score >= 16){
-        score -= 16;
-        userAllergy.add(allergyHash.get(16));
-      }else if(score >= 8){
-        score -= 8;
-        userAllergy.add(allergyHash.get(8));
-      }else if(score >= 4){
-        score -= 4;
-        userAllergy.add(allergyHash.get(4));
-      }else if(score >= 2){
-        score -= 2;
-        userAllergy.add(allergyHash.get(2));
-      }else{
-        score -= 1;
-        userAllergy.add(allergyHash.get(1));
-      }
+      while(score > 0 && score <= 256){
+        if(score >= 128){
+          score -= 128;
+          userAllergy.add(allergyHash.get(128));
+        }else if(score >= 64){
+          score -= 64;
+          userAllergy.add(allergyHash.get(64));
+        }else if(score >= 32){
+          score -= 32;
+          userAllergy.add(allergyHash.get(32));
+        }else if(score >= 16){
+          score -= 16;
+          userAllergy.add(allergyHash.get(16));
+        }else if(score >= 8){
+          score -= 8;
+          userAllergy.add(allergyHash.get(8));
+        }else if(score >= 4){
+          score -= 4;
+          userAllergy.add(allergyHash.get(4));
+        }else if(score >= 2){
+          score -= 2;
+          userAllergy.add(allergyHash.get(2));
+        }else{
+          score -= 1;
+          userAllergy.add(allergyHash.get(1));
+        }
     }
+    // else {
+    //   userAllergy.add("Please add a number less than 256.");
+    // }
+
     System.out.println(userAllergy);
     return userAllergy;
   }
